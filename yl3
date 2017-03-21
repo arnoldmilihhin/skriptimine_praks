@@ -1,0 +1,6 @@
+
+ifoif [ -f.bash_profile ]; then
+	echo "You have a .bash.profile. All is fine."
+else
+	echo "fuck, you do not have .bash.profile!"
+fi

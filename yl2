@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#
+echo -n "sisesta a kylje vaartus: "
+read a					#loeb väärtuse a
+echo -n "sisesta b kylje vaartus: "
+read b					#loeb väärtuse b
+echo -n "sisesta c kylje vaartus: "
+read c					#loeb väärtuse c
+#
+p=`echo "scale=2; ($a+$b+$c)/2" | bc`		#esimene valem 
+#
+#
+s=`echo "scale=2;sqrt ($p*($p-$a)*($p-$b)*($p-$c))" | bc`	#teine valem
+echo "pindala = $s"					#väljastab tulemuse
+

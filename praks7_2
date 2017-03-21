@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#
+for((r=1; r<6; r++))
+do
+	for((v=1; v<=$r; v++))
+do
+	echo -n "* "
+done
+	echo
+done

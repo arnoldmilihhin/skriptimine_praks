@@ -1,0 +1,28 @@
+
+#!/bin/bash
+#
+#kujundi trükimine
+#
+for((r=1; r<5; r++))
+do
+#täis rida tärnidest
+	if [ $r -eq 1 -o $r -eq 4 ]; then
+		for((v=1; v<6; v++))
+do
+echo -n "* "
+done
+#sellega üks rida tärnidest valmis
+	else
+#muidu trükime 1tärni ilma reavahetuseta
+	echo -n "* "
+#siis tulevad teised sümbolid alates teisest veerust kuni eelviimase veeruni
+	for((v=2; v<5; v++))
+do
+echo -n "o "
+done
+# ja veel viimasena üks tärn
+echo -n "* "
+# sellega kõik vahepealsed on ka valmis
+fi #lõpetame if lause
+echo
+done
