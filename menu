@@ -9,9 +9,9 @@ done
 echo "sisesta number 1-3"
 read number
 case $number in
-1)echo -e "stick to your ribs...........";;
-2)echo -e "british are coming...........";;
-3)echo -e "health foods.....";;
+1)echo -e "Stick to your ribs.\n Watch your cholesterol\n Enjoy your meal";;
+2)echo -e "british are coming.\n Enjoy your meal";;
+3)echo -e "health foods\nDieting is so boring\n Enjoy your meal";;
 esac
 
 
