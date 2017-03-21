@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#Arnold Milihhin, delete
+#
+test="$1"
+if [ $# -ne 1 ]; then
+	echo "Kasutus $0 faili nimi"
+else
+if [ -f $test ]; then
+	echo "Fail eksisteerib"
+        rm $test
+	echo "Fail on kustutatud"
+fi
+fi
+
+

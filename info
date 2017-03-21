@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#
+#Arnold Milihhin, info, 21.03.2017
+echo -n TERE TULEMAST! "JÄTKAMISEKS Vajuta Enter klahvi"
+read Enter
+kuupaev=`date +"%d.%m.%Y kell %H:%M"`
+echo "Täna on $kuupaev"
+kuu=`date +"%B"`
+echo $kuu
