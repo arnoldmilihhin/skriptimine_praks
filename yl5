@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#
+#kasutaja lisamise skript
+#
+#kasutajate NR vahemiku määramine
+if [ $# -ne 2 ]; then
+	echo "Kasutus: $0 nr_algus nr_lõpp"
+	exit 1
+else
+algus=$1
+lõpp=$2
+for((nr = $algus; nr <= $lõpp; nr++))
+	do
+	useradd -m -s /bin/bash user$nr # lisab kasutaja nimega userNR
+	parool=$(pwgen 8 1) # genereerime 1 parooli 8 sümbolit pikk
+echo "user$nr:$parool" | chpasswd # määrame kasutajale parooli
+done
+
+fi
