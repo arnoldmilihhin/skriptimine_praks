@@ -15,6 +15,7 @@ for((nr = $algus; nr <= $lõpp; nr++))
 	useradd -m -s /bin/bash user$nr # lisab kasutaja nimega userNR
 	parool=$(pwgen 8 1) # genereerime 1 parooli 8 sümbolit pikk
 echo "user$nr:$parool" | chpasswd # määrame kasutajale parooli
+chage -d 0 user$nr # kasutaja peab vahetama parooli esmakordsel logimisel
 echo "user$nr - $ parool" >> users
 done
 fi
